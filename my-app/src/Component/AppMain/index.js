@@ -11,8 +11,9 @@ class AppMain extends Component {
   }
 
   async componentDidMount() {
+    const baseURL = "https://api.shrtco.de/v2/"
     const rpos = await axios.get(
-      `https://api.shrtco.de/v2/shorten?url=example.org/very/long/link.html`
+      `https://${baseURL}shorten?url=example.org/very/long/link.html`
     );
 
     this.setState({

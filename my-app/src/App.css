@@ -46,3 +46,11 @@ body{
 .form-control{
   width: 60%;
 }
+
+.div-shot{
+  margin: 10px 0px;
+}
+
+.btn{
+  margin-left: 10px;
+}

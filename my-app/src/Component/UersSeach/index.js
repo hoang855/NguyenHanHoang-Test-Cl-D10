@@ -14,23 +14,12 @@ class UersSeach extends Component {
     });
   };
 
+  
+
   render() {
     const { search } = this.state;
     return (
       <div className="container-ippuy">
-        {/* <form>
-          <label>Enter a Link</label>
-          <input
-              type="text"
-              name="search"
-              className="iput-clss"
-              value={search}
-              onChange={this.onSearchChange}
-            />
-          <button className="clss-btn">
-            <i class="fas fa-arrow-right"></i>
-          </button>
-        </form> */}
 
         <div className="input-group flex-nowrap">
           <label>Enter a Link</label>
@@ -41,13 +30,23 @@ class UersSeach extends Component {
             placeholder="Username"
             aria-label="Username"
             aria-describedby="addon-wrapping"
+            value={search}
           />
         </div>
 
         <div className="div-shot">
-          <button>shrto.de</button>
-          <button>9qr.de</button>
-          <button>shiny.link</button>
+          <div className="d-grid gap-2 d-md-block">
+            <button className="btn btn-primary" type="button">
+              hrto.de
+            </button>
+            <button className="btn btn-primary" type="button">
+              9qr.de
+            </button>
+
+            <button className="btn btn-primary" type="button">
+              shiny.link
+            </button>
+          </div>
         </div>
       </div>
     );
